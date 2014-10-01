@@ -2,5 +2,5 @@ require 'rspec/core/rake_task'
  
 RSpec::Core::RakeTask.new do
   # clear the screen
-  50.times {puts}
+  150.times {puts}
 end
