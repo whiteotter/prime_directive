@@ -44,10 +44,28 @@ describe 'is_number_prime?' do
   it 'does include the number 6361' do
     expect(is_number_prime?(6361)).to eq(true)
   end
+  it 'does include the number 104723' do
+    expect(is_number_prime?(104723)).to eq(true)
+  end
+  it 'does not include the number 104724' do
+    expect(is_number_prime?(104724)).to eq(false)
+  end
   it 'does include the number 5915587277' do
-    expect(is_number_prime?(5915587277)).to eq(true)
+    expect(is_number_prime?(104513)).to eq(true)
   end
   it 'does not include the number 5915587278' do
-    expect(is_number_prime?(5915587278)).to eq(false)
+    expect(is_number_prime?(104512)).to eq(false)
+  end
+  it 'does include the number 5915587277' do
+    expect(is_number_prime?(14997761)).to eq(true)
+  end
+  it 'does not include the number 5915587278' do
+    expect(is_number_prime?(14_997_760)).to eq(false)
+  end
+  it 'does include the number 5915587277' do
+    expect(is_number_prime?(141650939)).to eq(true)
+  end
+  it 'does not include the number 5915587278' do
+    expect(is_number_prime?(283301878)).to eq(false)
   end
 end
